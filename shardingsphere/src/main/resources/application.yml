@@ -1,0 +1,34 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      initial-size: 5
+      min-idle: 3
+      max-active: 20
+      max-wait: 60000
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: /druid/*,*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico
+        session-stat-max-count: 10
+        session-stat-enable: true
+        principal-cookie-name: cookie-name
+        principal-session-name: session-name
+      stat-view-servlet:
+        login-username: admin
+        login-password: admin
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: false
+        allow: 127.0.0.1
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 1
+      filters: stat,wall

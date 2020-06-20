@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sharding.shardingsphere.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.sharding.shardingsphere.domain.User">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="username" property="username" jdbcType="VARCHAR" />
+        <result column="password" property="password" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <insert id="insertSelective">
+        insert into user(id,username,password) values
+        (#{id},#{username},#{password})
+    </insert>
+
+    <select id="selectByPrimarykey" resultMap="BaseResultMap">
+        select * from user where id=#{id}
+    </select>
+</mapper>

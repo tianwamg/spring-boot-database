@@ -8,11 +8,11 @@
     </resultMap>
 
     <insert id="insertSelective">
-        insert into user(id,username,password) values
+        insert into t(id,username,password) values
         (#{id},#{username},#{password})
     </insert>
 
     <select id="selectByPrimarykey" resultMap="BaseResultMap">
-        select * from user where id=#{id}
+        select * from t where id=#{id}
     </select>
 </mapper>

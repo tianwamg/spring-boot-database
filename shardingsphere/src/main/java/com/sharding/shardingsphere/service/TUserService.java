@@ -24,4 +24,8 @@ public class TUserService {
     public List<TUser> selectByAge(Integer age){
         return tUserMapper.selectByAge(age);
     }
+
+    public List<TUser> getList(){
+        return tUserMapper.getList();
+    }
 }

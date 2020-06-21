@@ -11,4 +11,6 @@ public interface TUserMapper {
     TUser selectiveByUserid(Integer userid);
 
     List<TUser> selectByAge(Integer age);
+
+    List<TUser> getList();
 }

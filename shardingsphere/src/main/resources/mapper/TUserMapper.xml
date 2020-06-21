@@ -16,10 +16,14 @@
     </insert>
 
     <select id="selectiveByUserid" resultMap="BaseResultMap">
-        select * from t_user_ where userid = #{userid};
+        select * from t_user where userid = #{userid};
     </select>
 
     <select id="selectByAge" resultMap="BaseResultMap">
-        select * from t_user_ where age = #{age};
+        select * from t_user where age = #{age};
+    </select>
+
+    <select id="getList" resultMap="BaseResultMap">
+        select * from t_user order by id limit 0,3
     </select>
 </mapper>

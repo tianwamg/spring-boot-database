@@ -31,4 +31,9 @@ public class TUserController {
     public List<TUser> selectByAge(int age){
         return tUserService.selectByAge(age);
     }
+
+    @GetMapping("/list")
+    public List<TUser> list(){
+        return tUserService.getList();
+    }
 }

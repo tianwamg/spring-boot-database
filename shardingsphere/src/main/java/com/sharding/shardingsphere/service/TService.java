@@ -1,7 +1,7 @@
 package com.sharding.shardingsphere.service;
 
-import com.sharding.shardingsphere.domain.User;
-import com.sharding.shardingsphere.mapper.UserMapper;
+import com.sharding.shardingsphere.domain.T;
+import com.sharding.shardingsphere.mapper.TMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,14 +9,14 @@ import org.springframework.stereotype.Service;
 public class TService {
 
     @Autowired
-    UserMapper userMapper;
+    TMapper tMapper;
 
 
-    public int insertSelective(User user){
-        return userMapper.insertSelective(user);
+    public int insertSelective(T t){
+        return tMapper.insertSelective(t);
     }
 
-    public User selectByPrimaryKey(Integer id){
-        return userMapper.selectByPrimarykey(id);
+    public T selectByPrimaryKey(Integer id){
+        return tMapper.selectByPrimarykey(id);
     }
 }

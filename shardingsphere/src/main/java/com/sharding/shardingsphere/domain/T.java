@@ -2,7 +2,7 @@ package com.sharding.shardingsphere.domain;
 
 import java.io.Serializable;
 
-public class User implements Serializable {
+public class T implements Serializable {
 
     private Integer id;
     private String username;

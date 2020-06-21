@@ -1,6 +1,6 @@
 package com.sharding.shardingsphere.controller;
 
-import com.sharding.shardingsphere.domain.User;
+import com.sharding.shardingsphere.domain.T;
 import com.sharding.shardingsphere.service.TService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,12 +16,12 @@ public class TController {
     TService tService;
 
     @PostMapping("/insert")
-    public int insert(User user){
-        return tService.insertSelective(user);
+    public int insert(T t){
+        return tService.insertSelective(t);
     }
 
     @GetMapping("/select")
-    public User select(Integer id){
+    public T select(Integer id){
         return tService.selectByPrimaryKey(id);
     }
 }

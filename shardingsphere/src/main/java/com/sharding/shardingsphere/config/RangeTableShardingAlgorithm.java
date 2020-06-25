@@ -26,7 +26,7 @@ public class RangeTableShardingAlgorithm implements RangeShardingAlgorithm<Long>
     public Collection<String> getRouteTable(String logicName,Date lower,Date upper){
         Set<String> set = new HashSet<>();
         if(lower !=null && upper != null){
-            List<String> rangeList = getRangerList(lower,upper);
+            List<String> rangeList = getRangeList(lower,upper);
             for(String s : rangeList){
                 set.add(logicName+s);
             }
@@ -34,7 +34,7 @@ public class RangeTableShardingAlgorithm implements RangeShardingAlgorithm<Long>
         return set;
     }
 
-    public List<String> getRangerList(Date startTime,Date endTime){
+    public List<String> getRangeList(Date startTime,Date endTime){
         List<String> result = new ArrayList<>();
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(startTime);

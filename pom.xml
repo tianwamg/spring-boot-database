@@ -25,6 +25,7 @@
     <modules>
         <module>shardingsphere</module>
         <module>mybatis-read-write</module>
+        <module>xxl-job</module>
     </modules>
 
     <dependencyManagement>

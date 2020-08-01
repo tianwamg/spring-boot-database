@@ -1,4 +1,4 @@
-package com.mybatis.mybatisreadwrite.config;
+package com.mybatis.mybatisreadwrite.enums;
 
 public enum DBTypeEnum {
 

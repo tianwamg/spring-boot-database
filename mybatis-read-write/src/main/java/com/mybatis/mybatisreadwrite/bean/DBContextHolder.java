@@ -1,4 +1,7 @@
-package com.mybatis.mybatisreadwrite.config;
+package com.mybatis.mybatisreadwrite.bean;
+
+import com.mybatis.mybatisreadwrite.enums.DBTypeEnum;
+import org.springframework.core.annotation.Order;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

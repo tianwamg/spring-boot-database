@@ -1,0 +1,16 @@
+server:
+  port: 10001
+spring:
+  application:
+    name: mybatis-read-write
+  datasource:
+    master:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/master?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    slave:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/slave?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver

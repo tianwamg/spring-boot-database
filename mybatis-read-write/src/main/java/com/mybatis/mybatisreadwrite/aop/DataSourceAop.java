@@ -7,6 +7,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+@Order(-1)
 @Aspect
 @Component
 public class DataSourceAop {

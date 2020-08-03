@@ -26,6 +26,8 @@
         <module>shardingsphere</module>
         <module>mybatis-read-write</module>
         <module>xxl-job</module>
+        <module>nosql-redis</module>
+        <module>nosql-mongo</module>
     </modules>
 
     <dependencyManagement>

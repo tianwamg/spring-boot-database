@@ -8,6 +8,8 @@
         - 分库分表,读写分离
     * mybatis-read-write
         - 配置读写分离,强制读主库
+    * mybatis-multi-datasource 
+        - 配置多数据源
 2. 非关系型数据库
     * nosql-redis
     * nosql-mongo

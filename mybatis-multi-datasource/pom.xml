@@ -59,9 +59,9 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <!--<resources>
+        <resources>
             <resource>
-                <directory>src/main/resources</directory>
+                <directory>src/main/main</directory>
                 <includes>
                     <include>**/*.xml</include>
                 </includes>
@@ -69,7 +69,7 @@
             <resource>
                 <directory>src/main/java</directory>
             </resource>
-        </resources>-->
+        </resources>
     </build>
 
 </project>

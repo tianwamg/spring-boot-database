@@ -2,10 +2,11 @@ package com.db.mybatismultidatasource.mapper.slave;
 
 import com.db.mybatismultidatasource.model.SysUser;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Mapper
+//@Mapper
 public interface ISlaveSysUserMapper {
 
     int insert(SysUser sysUser);

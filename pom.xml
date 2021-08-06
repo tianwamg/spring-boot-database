@@ -29,6 +29,7 @@
         <module>xxl-job</module>
         <module>nosql-redis</module>
         <module>nosql-mongo</module>
+        <module>nosql-cache</module>
     </modules>
 
     <dependencyManagement>

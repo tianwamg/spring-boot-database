@@ -13,6 +13,9 @@
 2. 非关系型数据库
     * nosql-redis
     * nosql-mongo
+    * nosql-cache
+        - guava cache直接加载进内存
+        - caffeine
 3. 分布式任务调度
     * xxl-job
     

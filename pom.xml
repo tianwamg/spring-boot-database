@@ -30,6 +30,8 @@
         <module>nosql-redis</module>
         <module>nosql-mongo</module>
         <module>nosql-cache</module>
+        <module>spring-data-jpa</module>
+        <module>spring-mybatis-plus</module>
     </modules>
 
     <dependencyManagement>
